@@ -1,0 +1,46 @@
+.number-of-events {
+    margin: 1rem auto;
+    max-width: 600px;
+    padding: 0 1rem;
+}
+
+.number-of-events label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.number-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.number-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Remove spinner arrows in Chrome, Safari, Edge */
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove spinner arrows in Firefox */
+.number-input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 768px) {
+    .number-of-events {
+        margin: 1rem auto;
+    }
+}

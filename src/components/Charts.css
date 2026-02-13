@@ -1,0 +1,139 @@
+.charts-container {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.charts-container.empty-state {
+    text-align: center;
+    color: #666;
+    padding: 3rem 2rem;
+}
+
+.charts-container h2 {
+    margin-bottom: 2rem;
+    color: #1f1f1f;
+    font-size: 1.8rem;
+}
+
+/* Statistics Summary */
+.statistics-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: #4ecdc4;
+}
+
+.stat-card p {
+    margin: 0.5rem 0 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Charts Grid */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.chart-wrapper {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1f1f1f;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .charts-container {
+        padding: 1rem;
+    }
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .statistics-summary {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .stat-card {
+        padding: 1rem;
+    }
+
+    .stat-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .chart-wrapper {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .charts-container {
+        padding: 0.5rem;
+    }
+
+    .charts-container h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .statistics-summary {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .stat-card {
+        padding: 0.8rem;
+    }
+
+    .stat-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .stat-card p {
+        font-size: 0.8rem;
+    }
+
+    .chart-wrapper {
+        padding: 0.8rem;
+    }
+
+    .chart-wrapper h3 {
+        font-size: 1rem;
+    }
+}

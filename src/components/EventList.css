@@ -1,0 +1,12 @@
+.event-list {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.no-events {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin: 3rem 0;
+}

@@ -1,0 +1,90 @@
+.event {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-header {
+    margin-bottom: 1rem;
+}
+
+.event-summary {
+    margin: 0 0 0.75rem 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.event-location {
+    margin: 0.5rem 0;
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.event-time {
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.event-details {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    border-left: 4px solid #667eea;
+}
+
+.event-details h4 {
+    margin: 0 0 0.75rem 0;
+    color: #667eea;
+    font-size: 1rem;
+}
+
+.event-description {
+    color: #444;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+.event-end-time {
+    margin-top: 0.75rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.details-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.details-btn:hover {
+    background: #5568d3;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .event {
+        padding: 1rem;
+    }
+
+    .event-summary {
+        font-size: 1.25rem;
+    }
+}
